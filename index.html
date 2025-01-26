@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-bebas-neue{
+            font-family: "Bebas Neue", serif;
+        }
+
+        .font-roboto{
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .font-montserrat{
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
-    <header></header>
+
+<body class="font-roboto">
+    <header class="bg-[#FFFBF0] lg:max-w-[1440px] lg:mx-auto pl-[17px]">
+        <nav>
+            <div class="md:flex md:justify-between md:items-center lg:pl-[135px] lg:pr-[137px] lg:pt-[39px] lg:pb-[18px]">
+                <div>
+                    <img class="w-[256px] h-[35px]" src="icons/logo.png" alt="">
+                </div>
+                <div>
+                    <ul class="flex gap-[57px] max-sm:hidden">
+                        <li>Home</li>
+                        <li>Product</li>
+                        <li>About us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner start -->
+        <div class="md:flex md:justify-around md:items-center">
+            <div>
+                <h1 class="font-normal text-[5rem] uppercase w-[416px] font-bebas-neue mb-[0px]"><span class="text-[#FABE4C]">Be the
+                        Penguins</span> <span class="text-[#363958]">of Winter</span></h1>
+                <p class="w-[357px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button style="background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);"
+                    class="px-[33px] py-[18px] rounded-[10px] font-medium text-white flex gap-[8px] mt-[8px]"><img
+                        class="h-[24px] w-[24px]" src="icons/shopping-cart 1.png" alt="">BUY NOW</button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="model">
+            </div>
+        </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
